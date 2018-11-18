@@ -19,13 +19,19 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.widget.Toast;
 
+import com.google.ar.core.Anchor;
 import com.google.ar.core.Frame;
 import com.google.ar.core.HitResult;
 import com.google.ar.core.Plane;
+import com.google.ar.core.Session;
 import com.google.ar.core.Trackable;
 import com.google.ar.core.TrackingState;
+import com.google.ar.core.exceptions.CameraNotAvailableException;
+import com.google.ar.core.exceptions.UnavailableException;
+import com.google.ar.sceneform.AnchorNode;
 import com.google.ar.sceneform.ArSceneView;
 import com.google.ar.sceneform.HitTestResult;
 import com.google.ar.sceneform.Node;
@@ -37,12 +43,15 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
+import androidx.annotation.NonNull;
+
 public class MainActivity extends AppCompatActivity {
+
 
 
     private static final String TAG ="MyActivity";
     private ArFragment fragment;
-    private ArSceneView arSceneView;
+
 
     // For testing the plane detection
     private PointerDrawable pointer = new PointerDrawable();
@@ -50,23 +59,25 @@ public class MainActivity extends AppCompatActivity {
     // More testing variables
     private boolean isTracking;
     private boolean isHitting;
-    private boolean hasPlacedRenderable = false;
+
 
     // Flag to ensure the ViewRenderable has been loaded
-    private boolean hasFinishedLoading = false;
+
 
     // For accessing the user's photos
     private Intent galleryIntent;
     private static final int PICK_IMAGE = 1;
 
-    // Let's us load a programmed view into the scene
+
+    private ArSceneView arSceneView;
     private ViewRenderable renderable;
-
-    // Detector for the user's tap
     private GestureDetector gestureDetector;
-
+    private boolean installRequested;
+    private static final int RC_PERMISSIONS = 0*123;
     private Snackbar loadingMessageSnackbar = null;
 
+    private boolean hasFinishedLoading = false;
+    private boolean hasPlacedRenderable = false;
 
 
 
@@ -85,6 +96,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if(!AppUtils.checkIsSupportedDeviceOrFinish(this)){
+            return;
+        }
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -103,11 +118,13 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        // Initialize the ar fragment using sceneform
+        arSceneView = findViewById(R.id.sceneform_ar_scene_view);
+
+        /* Initialize the ar fragment using sceneform
         fragment = (ArFragment)
                 getSupportFragmentManager()
                         .findFragmentById(R.id.sceneform_fragment);
-
+*/
 
         // Allows for asynchronous programming, will run in another thread
         CompletableFuture<ViewRenderable> renderableCompletableFuture =
@@ -117,18 +134,18 @@ public class MainActivity extends AppCompatActivity {
         .handle(
                 (notUsed, throwable) -> {
                     if(throwable != null) {
-                        displayError(this, "Unable to load renderable", throwable);
+                        AppUtils.displayError(this, "Unable to load renderable", throwable);
                         return null;
                     }
 
                     try {
                         renderable = renderableCompletableFuture.get();
-
+                        // Everything loaded succesfully
                         hasFinishedLoading = true;
                     }
 
                     catch (InterruptedException | ExecutionException ex){
-                        displayError(this, "Unable to load renderable", ex);
+                        AppUtils.displayError(this, "Unable to load renderable", ex);
                     }
                     return null;
                 });
@@ -149,12 +166,12 @@ public class MainActivity extends AppCompatActivity {
                                 return true;
                             }
                         });
-
+/*
         fragment.getArSceneView().getScene().addOnUpdateListener(frameTime -> {
             fragment.onUpdate(frameTime);
             onUpdate();
         });
-
+*/
         /* Will need to replace the fragment with a scene that we can detect
         the clicks in.
          */
@@ -199,7 +216,148 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             }
                         });
+        AppUtils.requestCameraPermission(this, RC_PERMISSIONS);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(arSceneView == null) {
+            return;
+        }
+
+        if(arSceneView.getSession() == null) {
+            // If the session wasn't created yet, don't resume rendering.
+            // This can happen if ARCore needs to be updated or permissions are not granted.
+            try {
+                Session session = AppUtils.createArSession(this, installRequested);
+                if(session == null) {
+                    installRequested = AppUtils.hasCameraPermission(this);
+                    return;
+                } else {
+                    arSceneView.setupSession(session);
+                }
+            } catch (UnavailableException e){
+                AppUtils.handleSessionException(this, e);
+            }
+        }
+
+        try {
+            arSceneView.resume();
+        } catch (CameraNotAvailableException ex) {
+            AppUtils.displayError(this, "Unable to get camera", ex);
+            finish();
+            return;
+        }
+
+        if(arSceneView.getSession() != null) {
+            showLoadingMessage();
+        }
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        if(arSceneView != null) {
+            arSceneView.pause();
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if(arSceneView != null) {
+            arSceneView.destroy();
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(
+            int requestCode, @NonNull String[] permissions, @NonNull int[] results) {
+        if(!AppUtils.hasCameraPermission(this)) {
+            if(!AppUtils.shouldShowRequestPermissionRationale(this)) {
+                AppUtils.launchPermissionSettings(this);
+            } else {
+                Toast.makeText(this, "Camera permission is needed to run this application", Toast.LENGTH_LONG)
+                        .show();
+            }
+            finish();
+        }
+    }
+
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if(hasFocus) {
+            getWindow()
+                    .getDecorView()
+                    .setSystemUiVisibility(
+                        View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        }
+    }
+
+    private void onSingleTap(MotionEvent tap) {
+        if(!hasFinishedLoading){
+            // Can't load in anything if it isn't loading yet
+            return;
+        }
+
+        Frame frame = arSceneView.getArFrame();
+        if(frame != null) {
+            if(!hasPlacedRenderable && tryPlaceRenderable(tap, frame)) {
+                hasPlacedRenderable = true;
+            }
+        }
+    }
+
+    private boolean tryPlaceRenderable(MotionEvent tap, Frame frame) {
+        if(tap != null && frame.getCamera().getTrackingState() == TrackingState.TRACKING) {
+            for(HitResult hit : frame.hitTest(tap)) {
+                Trackable trackable = hit.getTrackable();
+                if(trackable instanceof Plane && ((Plane) trackable).isPoseInPolygon(hit.getHitPose())) {
+                    // Create the Anchor
+                    Anchor anchor = hit.createAnchor();
+                    AnchorNode anchorNode = new AnchorNode(anchor);
+                    anchorNode.setParent(arSceneView.getScene());
+                    Node node = createNode();
+                    anchorNode.addChild(node);
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    private Node createNode() {
+        Node base = new Node();
+
+        Node viewRenderable = new Node();
+        viewRenderable.setParent(base);
+        viewRenderable.setRenderable(renderable);
+
+        return base;
+    }
+
+    private void showLoadingMessage() {
+        if(loadingMessageSnackbar != null && loadingMessageSnackbar.isShownOrQueued()) {
+            return;
+        }
+
+        loadingMessageSnackbar =
+                Snackbar.make(
+                        MainActivity.this.findViewById(android.R.id.content),
+                        "Searching for surfaces...",
+                        Snackbar.LENGTH_INDEFINITE);
+        loadingMessageSnackbar.getView().setBackgroundColor(0xbf323232);
+        loadingMessageSnackbar.show();
+    }
+
 
     private void hideLoadingMessage() {
         if (loadingMessageSnackbar == null) {
@@ -209,6 +367,7 @@ public class MainActivity extends AppCompatActivity {
         loadingMessageSnackbar.dismiss();
         loadingMessageSnackbar = null;
     }
+
     private void onUpdate() {
         boolean trackingChanged = updateTracking();
         View contentView = findViewById(android.R.id.content);
@@ -229,37 +388,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void onSingleTap(MotionEvent tap) {
-        if(!hasFinishedLoading){
-            // Can't load in anything if it isn't loading yet
-            return;
-        }
-    }
+
 
     // To display error to the user
-    public static void displayError(
-            final Context context, final String errorMsg, @Nullable final Throwable problem) {
-        final String tag = context.getClass().getSimpleName();
-        final String toastText;
-        if (problem != null && problem.getMessage() != null) {
-            Log.e(tag, errorMsg, problem);
-            toastText = errorMsg + ": " + problem.getMessage();
-        } else if (problem != null) {
-            Log.e(tag, errorMsg, problem);
-            toastText = errorMsg;
-        } else {
-            Log.e(tag, errorMsg);
-            toastText = errorMsg;
-        }
-
-        new Handler(Looper.getMainLooper())
-                .post(
-                        () -> {
-                            Toast toast = Toast.makeText(context, toastText, Toast.LENGTH_LONG);
-                            toast.setGravity(Gravity.CENTER, 0, 0);
-                            toast.show();
-                        });
-    }
 
 
     private boolean updateTracking() {
