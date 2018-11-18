@@ -26,7 +26,9 @@ import com.google.ar.core.HitResult;
 import com.google.ar.core.Plane;
 import com.google.ar.core.Trackable;
 import com.google.ar.core.TrackingState;
+import com.google.ar.sceneform.ArSceneView;
 import com.google.ar.sceneform.HitTestResult;
+import com.google.ar.sceneform.Node;
 import com.google.ar.sceneform.rendering.ModelRenderable;
 import com.google.ar.sceneform.rendering.ViewRenderable;
 import com.google.ar.sceneform.ux.ArFragment;
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG ="MyActivity";
     private ArFragment fragment;
+    private ArSceneView arSceneView;
 
     // For testing the plane detection
     private PointerDrawable pointer = new PointerDrawable();
@@ -47,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
     // More testing variables
     private boolean isTracking;
     private boolean isHitting;
+    private boolean hasPlacedRenderable = false;
 
     // Flag to ensure the ViewRenderable has been loaded
     private boolean hasFinishedLoading = false;
@@ -60,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
 
     // Detector for the user's tap
     private GestureDetector gestureDetector;
+
+    private Snackbar loadingMessageSnackbar = null;
+
+
 
 
     @Override
@@ -150,23 +158,57 @@ public class MainActivity extends AppCompatActivity {
         /* Will need to replace the fragment with a scene that we can detect
         the clicks in.
          */
-        /*
-        fragment
+
+        // Set a touch listener on the Scene to listen for taps.
+        arSceneView
                 .getScene()
                 .setOnTouchListener(
                         (HitTestResult hitTestResult, MotionEvent event) -> {
                             // If the solar system hasn't been placed yet, detect a tap and then check to see if
                             // the tap occurred on an ARCore plane to place the solar system.
-                            if (!hasPlacedSolarSystem) {
+                            if (!hasPlacedRenderable) {
                                 return gestureDetector.onTouchEvent(event);
                             }
 
                             // Otherwise return false so that the touch event can propagate to the scene.
                             return false;
                         });
-*/
+
+        // Set an update listener on the Scene that will hide the loading message once a Plane is
+        // detected.
+        arSceneView
+                .getScene()
+                .addOnUpdateListener(
+                        frameTime -> {
+                            if (loadingMessageSnackbar == null) {
+                                return;
+                            }
+
+                            Frame frame = arSceneView.getArFrame();
+                            if (frame == null) {
+                                return;
+                            }
+
+                            if (frame.getCamera().getTrackingState() != TrackingState.TRACKING) {
+                                return;
+                            }
+
+                            for (Plane plane : frame.getUpdatedTrackables(Plane.class)) {
+                                if (plane.getTrackingState() == TrackingState.TRACKING) {
+                                    hideLoadingMessage();
+                                }
+                            }
+                        });
     }
 
+    private void hideLoadingMessage() {
+        if (loadingMessageSnackbar == null) {
+            return;
+        }
+
+        loadingMessageSnackbar.dismiss();
+        loadingMessageSnackbar = null;
+    }
     private void onUpdate() {
         boolean trackingChanged = updateTracking();
         View contentView = findViewById(android.R.id.content);
