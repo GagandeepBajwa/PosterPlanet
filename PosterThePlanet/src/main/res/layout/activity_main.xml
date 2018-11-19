@@ -7,7 +7,14 @@
     tools:context=".MainActivity">
 
 
-    <include layout="@layout/content_main"/>
+    <com.google.ar.sceneform.ArSceneView
+        android:id="@+id/sceneform_ar_scene_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

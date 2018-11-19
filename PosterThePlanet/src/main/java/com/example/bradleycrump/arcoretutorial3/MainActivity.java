@@ -7,6 +7,7 @@ import android.nfc.Tag;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -42,8 +43,6 @@ import com.google.ar.sceneform.ux.ArFragment;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
-
-import androidx.annotation.NonNull;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -90,7 +89,6 @@ public class MainActivity extends AppCompatActivity {
             //create a viewrenderable
             // read the image from path after it
         }
-
     }
 
     @Override
@@ -101,8 +99,8 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
         // For accessing the user's photos
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -124,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
         fragment = (ArFragment)
                 getSupportFragmentManager()
                         .findFragmentById(R.id.sceneform_fragment);
-*/
+        */
 
         // Allows for asynchronous programming, will run in another thread
         CompletableFuture<ViewRenderable> renderableCompletableFuture =
@@ -142,6 +140,7 @@ public class MainActivity extends AppCompatActivity {
                         renderable = renderableCompletableFuture.get();
                         // Everything loaded succesfully
                         hasFinishedLoading = true;
+                        Log.v(TAG, "The renderable has finished loading");
                     }
 
                     catch (InterruptedException | ExecutionException ex){
@@ -188,6 +187,7 @@ public class MainActivity extends AppCompatActivity {
                             }
 
                             // Otherwise return false so that the touch event can propagate to the scene.
+                            Log.v(TAG, "Plane has been clicked");
                             return false;
                         });
 
@@ -304,6 +304,7 @@ public class MainActivity extends AppCompatActivity {
     private void onSingleTap(MotionEvent tap) {
         if(!hasFinishedLoading){
             // Can't load in anything if it isn't loading yet
+            Log.v(TAG, "The renderable isn't done loading");
             return;
         }
 
@@ -330,18 +331,18 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
-
+        Log.v(TAG, "The renderable was not able to be placed");
         return false;
     }
 
     private Node createNode() {
-        Node base = new Node();
 
         Node viewRenderable = new Node();
-        viewRenderable.setParent(base);
         viewRenderable.setRenderable(renderable);
 
-        return base;
+        //View renderableView = renderable.getView();
+
+        return viewRenderable;
     }
 
     private void showLoadingMessage() {

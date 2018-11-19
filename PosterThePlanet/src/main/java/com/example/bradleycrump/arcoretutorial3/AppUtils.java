@@ -60,9 +60,9 @@ public class AppUtils {
                         });
     }
 
-    /* Creates an ARCore Session. THis checks for the CAMERA permission, and if granted,
+    /* Creates an ARCore Session. This checks for the CAMERA permission, and if granted,
     checks the state of the ARCore install. If there is a problem an exception is thrown.
-    Care must be taken to update the installRequested falg as needed to aboid an infinite
+    Care must be taken to update the installRequested flag as needed to avoid an infinite
     checking loop. It should be set to true if null is returned form this method, and
     called again when the app is resumed.
 
