@@ -1,25 +1,17 @@
 package com.example.bradleycrump.arcoretutorial3;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.nfc.Tag;
+import android.nfc.TagLostException;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.GestureDetector;
-import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.Toast;
 
@@ -32,54 +24,45 @@ import com.google.ar.core.Trackable;
 import com.google.ar.core.TrackingState;
 import com.google.ar.core.exceptions.CameraNotAvailableException;
 import com.google.ar.core.exceptions.UnavailableException;
+
 import com.google.ar.sceneform.AnchorNode;
 import com.google.ar.sceneform.ArSceneView;
 import com.google.ar.sceneform.HitTestResult;
 import com.google.ar.sceneform.Node;
-import com.google.ar.sceneform.rendering.ModelRenderable;
+import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.rendering.ViewRenderable;
-import com.google.ar.sceneform.ux.ArFragment;
 
-import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
+    // Debugging
     private static final String TAG ="MyActivity";
-    private ArFragment fragment;
-
-
-    // For testing the plane detection
-    private PointerDrawable pointer = new PointerDrawable();
-
-    // More testing variables
-    private boolean isTracking;
-    private boolean isHitting;
-
-
-    // Flag to ensure the ViewRenderable has been loaded
-
 
     // For accessing the user's photos
     private Intent galleryIntent;
     private static final int PICK_IMAGE = 1;
 
-
+    // For accessing the scene session
     private ArSceneView arSceneView;
     private ViewRenderable renderable;
+
+    // Detect user clicking the screen
     private GestureDetector gestureDetector;
+
+    // Flags for system requirements
     private boolean installRequested;
     private static final int RC_PERMISSIONS = 0*123;
-    private Snackbar loadingMessageSnackbar = null;
 
+    // Flags for the status of the renderable
     private boolean hasFinishedLoading = false;
     private boolean hasPlacedRenderable = false;
 
+    // Displaying messages to the user
+    private Snackbar loadingMessageSnackbar = null;
 
-
+    // Needs to process the user returning from the gallery with an image
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -99,16 +82,11 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         setContentView(R.layout.activity_main);
-        //Toolbar toolbar = findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
+
 
         // For accessing the user's photos
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(view -> {
-            // Send the user to their photo gallery
-            // To be used after loading of a static image is successful
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show();
             galleryIntent = new Intent();
             galleryIntent.setType("image/*");
             galleryIntent.setAction(Intent.ACTION_GET_CONTENT);
@@ -116,13 +94,9 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        AppUtils.requestCameraPermission(this, RC_PERMISSIONS);
+        // Connect the view
         arSceneView = findViewById(R.id.sceneform_ar_scene_view);
-
-        /* Initialize the ar fragment using sceneform
-        fragment = (ArFragment)
-                getSupportFragmentManager()
-                        .findFragmentById(R.id.sceneform_fragment);
-        */
 
         // Allows for asynchronous programming, will run in another thread
         CompletableFuture<ViewRenderable> renderableCompletableFuture =
@@ -132,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         .handle(
                 (notUsed, throwable) -> {
                     if(throwable != null) {
-                        AppUtils.displayError(this, "Unable to load renderable", throwable);
+                        AppUtils.displayError(this, "Unable to load renderable", throwable);// Debugging
                         return null;
                     }
 
@@ -140,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                         renderable = renderableCompletableFuture.get();
                         // Everything loaded succesfully
                         hasFinishedLoading = true;
-                        Log.v(TAG, "The renderable has finished loading");
+                        Log.v(TAG, "The renderable has finished loading"); // Debug
                     }
 
                     catch (InterruptedException | ExecutionException ex){
@@ -148,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     return null;
                 });
+
 
         // Detect the user's tap
         gestureDetector =
@@ -165,17 +140,8 @@ public class MainActivity extends AppCompatActivity {
                                 return true;
                             }
                         });
-/*
-        fragment.getArSceneView().getScene().addOnUpdateListener(frameTime -> {
-            fragment.onUpdate(frameTime);
-            onUpdate();
-        });
-*/
-        /* Will need to replace the fragment with a scene that we can detect
-        the clicks in.
-         */
 
-        // Set a touch listener on the Scene to listen for taps.
+        // Set a touch listener on the Scene to listen for user interaction
         arSceneView
                 .getScene()
                 .setOnTouchListener(
@@ -191,8 +157,8 @@ public class MainActivity extends AppCompatActivity {
                             return false;
                         });
 
-        // Set an update listener on the Scene that will hide the loading message once a Plane is
-        // detected.
+        // Set an update listener on the Scene that will hide
+        // the loading message once a Plane is detected.
         arSceneView
                 .getScene()
                 .addOnUpdateListener(
@@ -203,20 +169,23 @@ public class MainActivity extends AppCompatActivity {
 
                             Frame frame = arSceneView.getArFrame();
                             if (frame == null) {
+                                Log.v(TAG, "Second condition in adding Update Listener");
                                 return;
                             }
 
                             if (frame.getCamera().getTrackingState() != TrackingState.TRACKING) {
+                                Log.v(TAG, "Third condition in adding Update Listener");
                                 return;
                             }
 
                             for (Plane plane : frame.getUpdatedTrackables(Plane.class)) {
                                 if (plane.getTrackingState() == TrackingState.TRACKING) {
+                                    Log.v(TAG, "Fourth condition in adding Update Listener");
                                     hideLoadingMessage();
                                 }
                             }
                         });
-        AppUtils.requestCameraPermission(this, RC_PERMISSIONS);
+
     }
 
     @Override
@@ -227,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if(arSceneView.getSession() == null) {
-            // If the session wasn't created yet, don't resume rendering.
+            // If the session isn't created yet, don't resume rendering.
             // This can happen if ARCore needs to be updated or permissions are not granted.
             try {
                 Session session = AppUtils.createArSession(this, installRequested);
@@ -318,9 +287,11 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean tryPlaceRenderable(MotionEvent tap, Frame frame) {
         if(tap != null && frame.getCamera().getTrackingState() == TrackingState.TRACKING) {
+            Log.v(TAG, "First condition met in tryPlaceRenderable");
             for(HitResult hit : frame.hitTest(tap)) {
                 Trackable trackable = hit.getTrackable();
                 if(trackable instanceof Plane && ((Plane) trackable).isPoseInPolygon(hit.getHitPose())) {
+                    Log.v(TAG, "Second condition met in tryPlaceRenderable");
                     // Create the Anchor
                     Anchor anchor = hit.createAnchor();
                     AnchorNode anchorNode = new AnchorNode(anchor);
@@ -339,6 +310,7 @@ public class MainActivity extends AppCompatActivity {
 
         Node viewRenderable = new Node();
         viewRenderable.setRenderable(renderable);
+       // viewRenderable.setWorldScale(1.0, 1.0,1.0);
 
         //View renderableView = renderable.getView();
 
@@ -369,64 +341,8 @@ public class MainActivity extends AppCompatActivity {
         loadingMessageSnackbar = null;
     }
 
-    private void onUpdate() {
-        boolean trackingChanged = updateTracking();
-        View contentView = findViewById(android.R.id.content);
-        if (trackingChanged)
-            if (isTracking) {
-                contentView.getOverlay().add(pointer);
-            } else {
-                contentView.getOverlay().remove(pointer);
-            }
-        contentView.invalidate();
 
-        if (isTracking) {
-            boolean hitTestChanged = updateHitTest();
-            if (hitTestChanged) {
-                pointer.setEnabled(isHitting);
-                contentView.invalidate();
-            }
-        }
-    }
-
-
-
-    // To display error to the user
-
-
-    private boolean updateTracking() {
-        Frame frame = fragment.getArSceneView().getArFrame();
-        boolean wasTracking = isTracking;
-        isTracking = frame != null &&
-                frame.getCamera().getTrackingState() == TrackingState.TRACKING;
-        return isTracking != wasTracking;
-    }
-
-    private boolean updateHitTest() {
-        Frame frame = fragment.getArSceneView().getArFrame();
-        android.graphics.Point pt = getScreenCenter();
-        List<HitResult> hits;
-        boolean wasHitting = isHitting;
-        isHitting = false;
-        if (frame != null) {
-            hits = frame.hitTest(pt.x, pt.y);
-            for (HitResult hit : hits) {
-                Trackable trackable = hit.getTrackable();
-                if (trackable instanceof Plane &&
-                        ((Plane) trackable).isPoseInPolygon(hit.getHitPose())) {
-                    isHitting = true;
-                    break;
-                }
-            }
-        }
-        return wasHitting != isHitting;
-    }
-
-    private android.graphics.Point getScreenCenter() {
-        View vw = findViewById(android.R.id.content);
-        return new android.graphics.Point(vw.getWidth()/2, vw.getHeight()/2);
-    }
-
+    /* May add action bar later
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -449,4 +365,5 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    */
 }

@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageInstaller;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
@@ -17,7 +16,6 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.Gravity;
-import android.view.KeyCharacterMap;
 import android.widget.Toast;
 
 import com.google.ar.core.ArCoreApk;
@@ -30,7 +28,7 @@ import com.google.ar.core.exceptions.UnavailableException;
 import com.google.ar.core.exceptions.UnavailableSdkTooOldException;
 
 public class AppUtils {
-    private static final String TAG = "SceneformDemoUtis";
+    private static final String TAG = "AppUtils";
     private static final double MIN_OPENGL_VERSION = 3.0;
 
     private AppUtils() {

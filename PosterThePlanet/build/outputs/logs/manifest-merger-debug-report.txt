@@ -1,0 +1,234 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:2:1-30:12
+MERGED from [com.android.support:design:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b3bc36d45f6fc072c34e5aa34899af9a/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/c0a70369deaeb756b2626c82b00a29d7/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.ar.sceneform.ux:sceneform-ux:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/sceneform-ux-1.4.0.aar/51b527ab5e480a5a4c377920a7fc2501/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/df40a8416adf590f47ae7c1a42f93d76/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/266d538419d3b2e0732d1670a7bd9e90/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/189cbe9fc4e06b1d31f2bd46fb4bf80a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/3b47879ed9f7b3c463405b686aef72ac/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b4bbe814992bd3e1215cffd026498a34/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/61e00fafb6e063f3f10e84c3eb287566/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/4a6f5c1730c99903e1b20f761f976631/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/9f2d5845bdb1de028de9a0ea2321f52b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/72873da652e0442363639a4cb354fe97/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/fec606f48d0b2f7a89b8a004dd6e602d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/8b97c0365bbada41157ef75b5fd5eefe/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/713dffe8c082eef4ddd73821f009ce38/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/a13ba78f13b8d3621cb6e7d70d1a082e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/2586b45e92a26381248a1f12778b59e4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/45afb62eee3be0c16373041a39da35ef/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b88f0197ac2d8c62f34a65abc939df58/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a70c07a76cafb2b090f8f3967294d80c/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/45bdea486b5ef61e86fb49b0f459392d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/0890d11781a45e20475fa0e81a61522d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/5a56d4e8010b899fc51824e5898d3312/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/ec24ac9a146e9873ff5dc55eb6220caf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/d7857b589e18562880c1c90fe05694e4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/8e2307e72271b3d1be85c714d9c213ea/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/755707db181d3bd521f01f87788a0fc2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/2dd6fcf4fb3ff058fcdab4b03f7ba5be/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/2296275de98839281a3ce0bc8af1c586/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/47cebd7287594eae8840c6b2d5e30581/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/3d3fbfb42f07717ae7ccf6e2991e158b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.ar.sceneform:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1f1f0d9cb1c7d7cc449497fa9083bbc0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.ar.sceneform:rendering:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/rendering-1.4.0.aar/fd989a8893840d854b4e238731723e05/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.ar.sceneform:sceneform-base:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/sceneform-base-1.4.0.aar/2347465286c9d3de0111ce42955f643b/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.ar.sceneform:filament-android:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/filament-android-1.4.0.aar/f2e9aeed6a55895724e3601203b0a14a/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.ar:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1c7ac772bc2a6bcbc98f93d1041036f6/AndroidManifest.xml:17:1-46:12
+INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:2:1-30:12
+	package
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:3:5-55
+		INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml
+		INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:2:1-30:12
+		INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:2:1-30:12
+		INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:5:5-24:19
+MERGED from [com.android.support:design:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b3bc36d45f6fc072c34e5aa34899af9a/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b3bc36d45f6fc072c34e5aa34899af9a/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/c0a70369deaeb756b2626c82b00a29d7/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/c0a70369deaeb756b2626c82b00a29d7/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b88f0197ac2d8c62f34a65abc939df58/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b88f0197ac2d8c62f34a65abc939df58/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a70c07a76cafb2b090f8f3967294d80c/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a70c07a76cafb2b090f8f3967294d80c/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.ar.sceneform:sceneform-base:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/sceneform-base-1.4.0.aar/2347465286c9d3de0111ce42955f643b/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.ar.sceneform:sceneform-base:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/sceneform-base-1.4.0.aar/2347465286c9d3de0111ce42955f643b/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.ar:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1c7ac772bc2a6bcbc98f93d1041036f6/AndroidManifest.xml:30:5-44:19
+MERGED from [com.google.ar:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1c7ac772bc2a6bcbc98f93d1041036f6/AndroidManifest.xml:30:5-44:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b88f0197ac2d8c62f34a65abc939df58/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.bradleycrump.arcoretutorial3.MainActivity
+ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:12:9-21:20
+	android:label
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:14:13-45
+	android:theme
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:15:13-56
+	android:name
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:13:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:19:27-74
+meta-data#com.google.ar.core
+ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:23:9-81
+	android:value
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:23:54-78
+	android:name
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:23:20-53
+uses-permission#android.permission.CAMERA
+ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:26:5-65
+	android:name
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:26:22-62
+uses-feature#android.hardware.camera.ar
+ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:27:5-87
+	android:required
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:27:61-84
+	android:name
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:27:19-60
+uses-sdk
+INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml
+INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b3bc36d45f6fc072c34e5aa34899af9a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b3bc36d45f6fc072c34e5aa34899af9a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/c0a70369deaeb756b2626c82b00a29d7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/c0a70369deaeb756b2626c82b00a29d7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.ar.sceneform.ux:sceneform-ux:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/sceneform-ux-1.4.0.aar/51b527ab5e480a5a4c377920a7fc2501/AndroidManifest.xml:20:5-44
+MERGED from [com.google.ar.sceneform.ux:sceneform-ux:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/sceneform-ux-1.4.0.aar/51b527ab5e480a5a4c377920a7fc2501/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/df40a8416adf590f47ae7c1a42f93d76/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/df40a8416adf590f47ae7c1a42f93d76/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/266d538419d3b2e0732d1670a7bd9e90/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/266d538419d3b2e0732d1670a7bd9e90/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/189cbe9fc4e06b1d31f2bd46fb4bf80a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/189cbe9fc4e06b1d31f2bd46fb4bf80a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/3b47879ed9f7b3c463405b686aef72ac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/3b47879ed9f7b3c463405b686aef72ac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b4bbe814992bd3e1215cffd026498a34/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b4bbe814992bd3e1215cffd026498a34/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/61e00fafb6e063f3f10e84c3eb287566/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/61e00fafb6e063f3f10e84c3eb287566/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/4a6f5c1730c99903e1b20f761f976631/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/4a6f5c1730c99903e1b20f761f976631/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/9f2d5845bdb1de028de9a0ea2321f52b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/9f2d5845bdb1de028de9a0ea2321f52b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/72873da652e0442363639a4cb354fe97/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/72873da652e0442363639a4cb354fe97/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/fec606f48d0b2f7a89b8a004dd6e602d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/fec606f48d0b2f7a89b8a004dd6e602d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/8b97c0365bbada41157ef75b5fd5eefe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/8b97c0365bbada41157ef75b5fd5eefe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/713dffe8c082eef4ddd73821f009ce38/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/713dffe8c082eef4ddd73821f009ce38/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/a13ba78f13b8d3621cb6e7d70d1a082e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/a13ba78f13b8d3621cb6e7d70d1a082e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/2586b45e92a26381248a1f12778b59e4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/2586b45e92a26381248a1f12778b59e4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/45afb62eee3be0c16373041a39da35ef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/45afb62eee3be0c16373041a39da35ef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b88f0197ac2d8c62f34a65abc939df58/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b88f0197ac2d8c62f34a65abc939df58/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a70c07a76cafb2b090f8f3967294d80c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a70c07a76cafb2b090f8f3967294d80c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/45bdea486b5ef61e86fb49b0f459392d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/45bdea486b5ef61e86fb49b0f459392d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/0890d11781a45e20475fa0e81a61522d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/0890d11781a45e20475fa0e81a61522d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/5a56d4e8010b899fc51824e5898d3312/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/5a56d4e8010b899fc51824e5898d3312/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/ec24ac9a146e9873ff5dc55eb6220caf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/ec24ac9a146e9873ff5dc55eb6220caf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/d7857b589e18562880c1c90fe05694e4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/d7857b589e18562880c1c90fe05694e4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/8e2307e72271b3d1be85c714d9c213ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/8e2307e72271b3d1be85c714d9c213ea/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/755707db181d3bd521f01f87788a0fc2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/755707db181d3bd521f01f87788a0fc2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/2dd6fcf4fb3ff058fcdab4b03f7ba5be/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/2dd6fcf4fb3ff058fcdab4b03f7ba5be/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/2296275de98839281a3ce0bc8af1c586/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/2296275de98839281a3ce0bc8af1c586/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/47cebd7287594eae8840c6b2d5e30581/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/47cebd7287594eae8840c6b2d5e30581/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/3d3fbfb42f07717ae7ccf6e2991e158b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/3d3fbfb42f07717ae7ccf6e2991e158b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.ar.sceneform:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1f1f0d9cb1c7d7cc449497fa9083bbc0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.ar.sceneform:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1f1f0d9cb1c7d7cc449497fa9083bbc0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.ar.sceneform:rendering:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/rendering-1.4.0.aar/fd989a8893840d854b4e238731723e05/AndroidManifest.xml:5:5-44
+MERGED from [com.google.ar.sceneform:rendering:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/rendering-1.4.0.aar/fd989a8893840d854b4e238731723e05/AndroidManifest.xml:5:5-44
+MERGED from [com.google.ar.sceneform:filament-android:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/filament-android-1.4.0.aar/f2e9aeed6a55895724e3601203b0a14a/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.ar.sceneform:filament-android:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/filament-android-1.4.0.aar/f2e9aeed6a55895724e3601203b0a14a/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.ar:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1c7ac772bc2a6bcbc98f93d1041036f6/AndroidManifest.xml:26:5-28:41
+MERGED from [com.google.ar:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1c7ac772bc2a6bcbc98f93d1041036f6/AndroidManifest.xml:26:5-28:41
+INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml
+INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml
+		INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml
+		ADDED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml
+		INJECTED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:2:1-30:12 reason: com.google.ar.sceneform has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:2:1-30:12 reason: com.google.ar.sceneform has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/AndroidManifest.xml:2:1-30:12 reason: com.google.ar.sceneform requested WRITE_EXTERNAL_STORAGE
+activity#com.google.ar.core.InstallActivity
+ADDED from [com.google.ar:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1c7ac772bc2a6bcbc98f93d1041036f6/AndroidManifest.xml:33:9-39:80
+	android:excludeFromRecents
+		ADDED from [com.google.ar:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1c7ac772bc2a6bcbc98f93d1041036f6/AndroidManifest.xml:36:13-46
+	android:launchMode
+		ADDED from [com.google.ar:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1c7ac772bc2a6bcbc98f93d1041036f6/AndroidManifest.xml:38:13-43
+	android:exported
+		ADDED from [com.google.ar:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1c7ac772bc2a6bcbc98f93d1041036f6/AndroidManifest.xml:37:13-37
+	android:configChanges
+		ADDED from [com.google.ar:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1c7ac772bc2a6bcbc98f93d1041036f6/AndroidManifest.xml:35:13-74
+	android:theme
+		ADDED from [com.google.ar:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1c7ac772bc2a6bcbc98f93d1041036f6/AndroidManifest.xml:39:13-77
+	android:name
+		ADDED from [com.google.ar:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1c7ac772bc2a6bcbc98f93d1041036f6/AndroidManifest.xml:34:13-62
+meta-data#com.google.ar.core.min_apk_version
+ADDED from [com.google.ar:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1c7ac772bc2a6bcbc98f93d1041036f6/AndroidManifest.xml:41:9-43:41
+	android:value
+		ADDED from [com.google.ar:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1c7ac772bc2a6bcbc98f93d1041036f6/AndroidManifest.xml:43:13-38
+	android:name
+		ADDED from [com.google.ar:core:1.4.0] /Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1c7ac772bc2a6bcbc98f93d1041036f6/AndroidManifest.xml:42:13-62
