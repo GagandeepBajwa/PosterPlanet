@@ -1,6 +1,10 @@
 package com.example.bradleycrump.arcoretutorial3;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.nfc.TagLostException;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,6 +17,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.ar.core.Anchor;
@@ -32,6 +37,8 @@ import com.google.ar.sceneform.Node;
 import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.rendering.ViewRenderable;
 
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
@@ -43,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
     // For accessing the user's photos
     private Intent galleryIntent;
     private static final int PICK_IMAGE = 1;
+    private ImageView imageView;
 
     // For accessing the scene session
     private ArSceneView arSceneView;
@@ -67,10 +75,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if(requestCode == PICK_IMAGE){
+        if(requestCode == Activity.RESULT_OK && data != null){
+            try {
+                final Uri selectedUri = data.getData();
+                final InputStream inputStream = getContentResolver().openInputStream(selectedUri);
+                final Bitmap selectedImage = BitmapFactory.decodeStream(inputStream);
+                imageView = findViewById(R.id.imageView);
+                imageView.setImageBitmap(selectedImage);
+            }
+            catch (FileNotFoundException e) {
+                e.printStackTrace();
+                Toast.makeText(this, "We couldn't use that image, sorry", Toast.LENGTH_LONG).show();
+            }
             Log.v(TAG, "An image has been clicked");
-            //create a viewrenderable
-            // read the image from path after it
+        } else {
+            Toast.makeText(this, "Please pick an image", Toast.LENGTH_LONG).show();
         }
     }
 
