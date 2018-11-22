@@ -8,12 +8,12 @@
         "source": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
-        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b88f0197ac2d8c62f34a65abc939df58/res/layout/notification_template_part_chronometer.xml"
-    },
-    {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
+        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b88f0197ac2d8c62f34a65abc939df58/res/layout/notification_template_part_chronometer.xml"
     },
     {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/anim_design_snackbar_in.xml.flat",
@@ -36,12 +36,12 @@
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-mdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
-        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-xxhdpi-v4/abc_list_pressed_holo_light.9.png"
-    },
-    {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
+        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-xxhdpi-v4/abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -84,20 +84,20 @@
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
-        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
-    },
-    {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
-        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/anim_abc_popup_exit.xml.flat",
-        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/anim/abc_popup_exit.xml"
+        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
+        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/layout___arcore_education.xml.flat",
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/core-1.4.0.aar/1c7ac772bc2a6bcbc98f93d1041036f6/res/layout/__arcore_education.xml"
+    },
+    {
+        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/anim_abc_popup_exit.xml.flat",
+        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/anim/abc_popup_exit.xml"
     },
     {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -144,12 +144,12 @@
         "source": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -176,24 +176,24 @@
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable/abc_btn_borderless_material.xml"
     },
     {
-        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/anim_abc_slide_in_top.xml.flat",
-        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/anim/abc_slide_in_top.xml"
-    },
-    {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/anim_abc_slide_in_top.xml.flat",
+        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/anim/abc_slide_in_top.xml"
     },
     {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-xxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/layout_select_dialog_singlechoice_material.xml.flat",
-        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/layout/select_dialog_singlechoice_material.xml"
-    },
-    {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/layout_select_dialog_singlechoice_material.xml.flat",
+        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -216,16 +216,16 @@
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b3bc36d45f6fc072c34e5aa34899af9a/res/drawable-v21/design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/color_mtrl_tabs_colored_ripple_color.xml.flat",
-        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b3bc36d45f6fc072c34e5aa34899af9a/res/color/mtrl_tabs_colored_ripple_color.xml"
+        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-hdpi-v4/abc_list_focused_holo.9.png"
     },
     {
-        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
-        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png"
+        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/color_mtrl_tabs_colored_ripple_color.xml.flat",
+        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b3bc36d45f6fc072c34e5aa34899af9a/res/color/mtrl_tabs_colored_ripple_color.xml"
     },
     {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
@@ -236,12 +236,12 @@
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b88f0197ac2d8c62f34a65abc939df58/res/layout-v21/notification_template_custom_big.xml"
     },
     {
-        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/animator_mtrl_btn_unelevated_state_list_anim.xml.flat",
-        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b3bc36d45f6fc072c34e5aa34899af9a/res/animator/mtrl_btn_unelevated_state_list_anim.xml"
-    },
-    {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable_abc_item_background_holo_light.xml.flat",
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/animator_mtrl_btn_unelevated_state_list_anim.xml.flat",
+        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b3bc36d45f6fc072c34e5aa34899af9a/res/animator/mtrl_btn_unelevated_state_list_anim.xml"
     },
     {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -276,12 +276,12 @@
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b3bc36d45f6fc072c34e5aa34899af9a/res/layout/mtrl_layout_snackbar.xml"
     },
     {
-        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
-        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-mdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/color_abc_primary_text_material_light.xml.flat",
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
+        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-mdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/animator-v21_design_appbar_state_list_animator.xml.flat",
@@ -336,12 +336,12 @@
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
     },
     {
-        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/raw_sceneform_camera_material.matc.flat",
-        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/rendering-1.4.0.aar/fd989a8893840d854b4e238731723e05/res/raw/sceneform_camera_material.matc"
-    },
-    {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/raw_sceneform_camera_material.matc.flat",
+        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/rendering-1.4.0.aar/fd989a8893840d854b4e238731723e05/res/raw/sceneform_camera_material.matc"
     },
     {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/layout_abc_list_menu_item_icon.xml.flat",
@@ -372,12 +372,12 @@
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/anim/abc_tooltip_enter.xml"
     },
     {
-        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
-        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png"
-    },
-    {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b88f0197ac2d8c62f34a65abc939df58/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
+        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -440,12 +440,12 @@
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
-        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
-    },
-    {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable_potato.jpeg.flat",
         "source": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/src/main/res/drawable/potato.jpeg"
+    },
+    {
+        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
+        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable_abc_spinner_textfield_background_material.xml.flat",
@@ -456,12 +456,12 @@
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/color-v23/abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-v23_abc_control_background_material.xml.flat",
-        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-v23/abc_control_background_material.xml"
-    },
-    {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-v23_abc_control_background_material.xml.flat",
+        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-v23/abc_control_background_material.xml"
     },
     {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/layout_sceneform_plane_discovery_layout.xml.flat",
@@ -504,12 +504,12 @@
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_dark.xml.flat",
-        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/color/abc_hint_foreground_material_dark.xml"
-    },
-    {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/drawable-xxhdpi-v4/abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_dark.xml.flat",
+        "source": "/Users/BradleyCrump/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/60464475d02717a9c1e27371a8c30f11/res/color/abc_hint_foreground_material_dark.xml"
     },
     {
         "merged": "/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/res/merged/debug/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",

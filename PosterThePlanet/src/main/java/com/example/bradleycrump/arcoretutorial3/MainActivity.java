@@ -67,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
     private boolean hasFinishedLoading = false;
     private boolean hasPlacedRenderable = false;
 
+    private boolean imageLoadedFromBitmap = false;
+
     // Displaying messages to the user
     private Snackbar loadingMessageSnackbar = null;
 
@@ -75,13 +77,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+        imageView = findViewById(R.id.imageView);
+
         if(requestCode == Activity.RESULT_OK && data != null){
             try {
                 final Uri selectedUri = data.getData();
                 final InputStream inputStream = getContentResolver().openInputStream(selectedUri);
                 final Bitmap selectedImage = BitmapFactory.decodeStream(inputStream);
-                imageView = findViewById(R.id.imageView);
+
+                imageLoadedFromBitmap = imageView.getDrawable() != null;
+                if(imageLoadedFromBitmap)
+                    Log.v(TAG, "Image has been selected from user's gallery");
+
                 imageView.setImageBitmap(selectedImage);
+
             }
             catch (FileNotFoundException e) {
                 e.printStackTrace();
@@ -204,7 +213,6 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             }
                         });
-
     }
 
     @Override
