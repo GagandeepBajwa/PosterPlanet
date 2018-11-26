@@ -1059,6 +1059,7 @@ id add
 id alertTitle
 id all
 id always
+id appCompatImageView
 id async
 id auto
 id barrier

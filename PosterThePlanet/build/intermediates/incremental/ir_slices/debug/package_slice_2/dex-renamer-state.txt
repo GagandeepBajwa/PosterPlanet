@@ -1,4 +1,4 @@
-#Thu Nov 22 10:44:49 PST 2018
+#Sun Nov 25 17:00:14 PST 2018
 base.0=/Users/BradleyCrump/school/f18/c2160/ARCoreTutorial3/PosterPlanet/PosterThePlanet/build/intermediates/transforms/dexMerger/debug/2
 path.0=classes.dex
 renamed.0=classes.dex

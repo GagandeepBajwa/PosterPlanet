@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
         // Connect the view
         arSceneView = findViewById(R.id.sceneform_ar_scene_view);
 
-        // Allows for asynchronous programming, will run in another thread
+        // Will run in another thread
         CompletableFuture<ViewRenderable> renderableCompletableFuture =
                 ViewRenderable.builder().setView(this, R.layout.view_renderable).build();
 
@@ -134,17 +134,14 @@ public class MainActivity extends AppCompatActivity {
         .handle(
                 (notUsed, throwable) -> {
                     if(throwable != null) {
-                        AppUtils.displayError(this, "Unable to load renderable", throwable);// Debugging
+                        AppUtils.displayError(this, "Unable to load renderable", throwable);
                         return null;
                     }
-
                     try {
                         renderable = renderableCompletableFuture.get();
-                        // Everything loaded succesfully
                         hasFinishedLoading = true;
-                        Log.v(TAG, "The renderable has finished loading"); // Debug
+                        Log.v(TAG, "The renderable has finished loading");
                     }
-
                     catch (InterruptedException | ExecutionException ex){
                         AppUtils.displayError(this, "Unable to load renderable", ex);
                     }
@@ -314,12 +311,9 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean tryPlaceRenderable(MotionEvent tap, Frame frame) {
         if(tap != null && frame.getCamera().getTrackingState() == TrackingState.TRACKING) {
-            Log.v(TAG, "First condition met in tryPlaceRenderable");
             for(HitResult hit : frame.hitTest(tap)) {
                 Trackable trackable = hit.getTrackable();
                 if(trackable instanceof Plane && ((Plane) trackable).isPoseInPolygon(hit.getHitPose())) {
-                    Log.v(TAG, "Second condition met in tryPlaceRenderable");
-                    // Create the Anchor
                     Anchor anchor = hit.createAnchor();
                     AnchorNode anchorNode = new AnchorNode(anchor);
                     anchorNode.setParent(arSceneView.getScene());
